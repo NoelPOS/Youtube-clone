@@ -23,7 +23,7 @@ const Container = styled.div`
   height: 100vh;
   background-color: black;
   color: white;
-  font-size: 12px;
+  font-size: 15px;
   position: sticky;
   top: 0;
 `
@@ -41,18 +41,21 @@ const Logo = styled.div`
 `
 
 const Img = styled.img`
-  height: 10px;
+  height: 20px;
 `
 
 const Item = styled.div`
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 2.7px 0px;
+  padding: 5px 0px;
   cursor: pointer;
 `
 
-const Hr = styled.hr``
+const Hr = styled.hr`
+  margin: 5px 0px;
+  border: 0.1px solid gray;
+`
 
 const Login = styled.div`
   margin: 10px 0px;
@@ -79,24 +82,24 @@ const Menu = () => {
           LeonTube
         </Logo>
         <Item>
-          <HomeIcon />
+          <HomeIcon sx={{ fontSize: 'medium' }} />
           Home
         </Item>
         <Item>
-          <ExploreOutlinedIcon />
+          <ExploreOutlinedIcon sx={{ fontSize: 'medium' }} />
           Explore
         </Item>
         <Item>
-          <SubscriptionsOutlinedIcon />
+          <SubscriptionsOutlinedIcon sx={{ fontSize: 'medium' }} />
           Subscriptions
         </Item>
         <Hr />
         <Item>
-          <VideoLibraryOutlinedIcon />
+          <VideoLibraryOutlinedIcon sx={{ fontSize: 'medium' }} />
           Library
         </Item>
         <Item>
-          <HistoryOutlinedIcon />
+          <HistoryOutlinedIcon sx={{ fontSize: 'medium' }} />
           History
         </Item>
         <Hr />
@@ -105,51 +108,51 @@ const Menu = () => {
           Sign In for more content
           <Button>
             {' '}
-            <AccountCircleOutlinedIcon />
+            <AccountCircleOutlinedIcon sx={{ fontSize: 'medium' }} />
             SIGN IN
           </Button>
         </Login>
         <Hr />
         {/* <Title>BEST OF LAMATUBE</Title> */}
         <Item>
-          <LibraryMusicOutlinedIcon />
+          <LibraryMusicOutlinedIcon sx={{ fontSize: 'medium' }} />
           Music
         </Item>
         <Item>
-          <SportsBasketballOutlinedIcon />
+          <SportsBasketballOutlinedIcon sx={{ fontSize: 'medium' }} />
           Sports
         </Item>
         <Item>
-          <SportsEsportsOutlinedIcon />
+          <SportsEsportsOutlinedIcon sx={{ fontSize: 'medium' }} />
           Gaming
         </Item>
         <Item>
-          <MovieOutlinedIcon />
+          <MovieOutlinedIcon sx={{ fontSize: 'medium' }} />
           Movies
         </Item>
         <Item>
-          <ArticleOutlinedIcon />
+          <ArticleOutlinedIcon sx={{ fontSize: 'medium' }} />
           News
         </Item>
         <Item>
-          <LiveTvOutlinedIcon />
+          <LiveTvOutlinedIcon sx={{ fontSize: 'medium' }} />
           Live
         </Item>
         <Hr />
         <Item>
-          <SettingsOutlinedIcon />
+          <SettingsOutlinedIcon sx={{ fontSize: 'medium' }} />
           Settings
         </Item>
         <Item>
-          <FlagOutlinedIcon />
+          <FlagOutlinedIcon sx={{ fontSize: 'medium' }} />
           Report
         </Item>
         <Item>
-          <HelpOutlineOutlinedIcon />
+          <HelpOutlineOutlinedIcon sx={{ fontSize: 'medium' }} />
           Help
         </Item>
         <Item>
-          <SettingsBrightnessOutlinedIcon />
+          <SettingsBrightnessOutlinedIcon sx={{ fontSize: 'medium' }} />
           Light Mode
         </Item>
       </Wrapper>
