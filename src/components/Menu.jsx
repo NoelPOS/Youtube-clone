@@ -23,11 +23,13 @@ const Container = styled.div`
   height: 100vh;
   background-color: black;
   color: white;
-  font-size: 15px;
+  font-size: 12px;
+  position: sticky;
+  top: 0;
 `
 
 const Wrapper = styled.div`
-  padding: 10px 15px;
+  padding: 5px 15px;
 `
 
 const Logo = styled.div`
@@ -39,18 +41,34 @@ const Logo = styled.div`
 `
 
 const Img = styled.img`
-  height: 15px;
+  height: 10px;
 `
 
 const Item = styled.div`
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 7.5px 0px;
+  padding: 2.7px 0px;
   cursor: pointer;
 `
 
 const Hr = styled.hr``
+
+const Login = styled.div`
+  margin: 10px 0px;
+`
+
+const Button = styled.button`
+  margin-top: 9px;
+  padding: 3px 5px;
+  background: transparent;
+  border: 1px solid blue;
+  color: blue;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+`
 
 const Menu = () => {
   return (
@@ -60,10 +78,6 @@ const Menu = () => {
           <Img src={logo} />
           LeonTube
         </Logo>
-        <Item>
-          <HomeIcon />
-          Home
-        </Item>
         <Item>
           <HomeIcon />
           Home
@@ -87,6 +101,15 @@ const Menu = () => {
         </Item>
         <Hr />
 
+        <Login>
+          Sign In for more content
+          <Button>
+            {' '}
+            <AccountCircleOutlinedIcon />
+            SIGN IN
+          </Button>
+        </Login>
+        <Hr />
         {/* <Title>BEST OF LAMATUBE</Title> */}
         <Item>
           <LibraryMusicOutlinedIcon />
@@ -124,6 +147,10 @@ const Menu = () => {
         <Item>
           <HelpOutlineOutlinedIcon />
           Help
+        </Item>
+        <Item>
+          <SettingsBrightnessOutlinedIcon />
+          Light Mode
         </Item>
       </Wrapper>
     </Container>

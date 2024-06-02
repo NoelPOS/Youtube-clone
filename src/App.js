@@ -17,7 +17,9 @@ function App() {
       <Menu />
       <Main>
         <NavBar />
-        <Wrapper>Video Cards</Wrapper>
+        <Wrapper>
+          <h1>test</h1>
+        </Wrapper>
       </Main>
     </Container>
   )
