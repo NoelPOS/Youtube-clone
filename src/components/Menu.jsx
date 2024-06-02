@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled, { ThemeProvider } from 'styled-components'
 import logo from '../images/logo.png'
 import HomeIcon from '@mui/icons-material/Home'
 import ExploreOutlinedIcon from '@mui/icons-material/ExploreOutlined'
@@ -21,8 +21,8 @@ import SettingsBrightnessOutlinedIcon from '@mui/icons-material/SettingsBrightne
 const Container = styled.div`
   flex: 1;
   height: 100vh;
-  background-color: black;
-  color: white;
+  background-color: ${({ theme }) => theme.bgLighter};
+  color: ${({ theme }) => theme.text};
   font-size: 15px;
   position: sticky;
   top: 0;
@@ -50,11 +50,14 @@ const Item = styled.div`
   gap: 10px;
   padding: 5px 0px;
   cursor: pointer;
+  &:hover {
+    background-color: ${({ theme }) => theme.soft};
+  }
 `
 
 const Hr = styled.hr`
   margin: 5px 0px;
-  border: 0.1px solid gray;
+  border: 0.5px solid ${({ theme }) => theme.soft};
 `
 
 const Login = styled.div`
@@ -73,7 +76,7 @@ const Button = styled.button`
   gap: 5px;
 `
 
-const Menu = () => {
+const Menu = ({ darkMode, setDarkMode }) => {
   return (
     <Container>
       <Wrapper>
@@ -151,7 +154,7 @@ const Menu = () => {
           <HelpOutlineOutlinedIcon sx={{ fontSize: 'medium' }} />
           Help
         </Item>
-        <Item>
+        <Item onClick={() => setDarkMode(!darkMode)}>
           <SettingsBrightnessOutlinedIcon sx={{ fontSize: 'medium' }} />
           Light Mode
         </Item>
