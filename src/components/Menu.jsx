@@ -76,6 +76,14 @@ const Button = styled.button`
   gap: 5px;
 `
 
+const Title = styled.h2`
+  font-size: 14px;
+  font-weight: 500;
+  color: #aaaaaa;
+  margin-bottom: 20px;
+  margin-top: 10px;
+`
+
 const Menu = ({ darkMode, setDarkMode }) => {
   return (
     <Container>
@@ -116,7 +124,7 @@ const Menu = ({ darkMode, setDarkMode }) => {
           </Button>
         </Login>
         <Hr />
-        {/* <Title>BEST OF LAMATUBE</Title> */}
+        <Title>BEST OF LeonTube</Title>
         <Item>
           <LibraryMusicOutlinedIcon sx={{ fontSize: 'medium' }} />
           Music
