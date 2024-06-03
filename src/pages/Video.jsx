@@ -7,7 +7,7 @@ import AddTaskOutlinedIcon from '@mui/icons-material/AddTaskOutlined'
 import ThumbDownIcon from '@mui/icons-material/ThumbDown'
 import ThumbUpIcon from '@mui/icons-material/ThumbUp'
 
-import thumbnail from '../images/thumbnail.png'
+import thumbnail from '../images/thumbnail.jpg'
 import video from '../images/video.mp4'
 
 import Recommendation from '../components/Recommendation'

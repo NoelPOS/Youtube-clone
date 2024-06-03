@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 import Comment from './Comment'
 
-import thumbnail from '../images/thumbnail.png'
+import thumbnail from '../images/thumbnail.jpg'
 
 const Container = styled.div``
 

@@ -3,17 +3,22 @@ import Card from './Card'
 import styled from 'styled-components'
 
 const Container = styled.div`
-  flex: 1;
+  flex: 2;
 `
 
 const Recommendation = () => {
   return (
     <Container>
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
+      <Card type='sm' />
+      <Card type='sm' />
+      <Card type='sm' />
+      <Card type='sm' />
+      <Card type='sm' />
+      <Card type='sm' />
+      <Card type='sm' />
+      <Card type='sm' />
+      <Card type='sm' />
+      <Card type='sm' />
     </Container>
   )
 }

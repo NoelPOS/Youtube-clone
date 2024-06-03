@@ -121,11 +121,13 @@ const Menu = ({ darkMode, setDarkMode }) => {
 
         <Login>
           Sign In for more content
-          <Button>
-            {' '}
-            <AccountCircleOutlinedIcon sx={{ fontSize: 'medium' }} />
-            SIGN IN
-          </Button>
+          <Link to='/signin' style={{ textDecoration: 'none' }}>
+            <Button>
+              {' '}
+              <AccountCircleOutlinedIcon sx={{ fontSize: 'medium' }} />
+              SIGN IN
+            </Button>
+          </Link>
         </Login>
         <Hr />
         <Title>BEST OF LeonTube</Title>
