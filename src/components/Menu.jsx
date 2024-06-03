@@ -1,5 +1,6 @@
 import React from 'react'
 import styled, { ThemeProvider } from 'styled-components'
+import { Link } from 'react-router-dom'
 import logo from '../images/logo.png'
 import HomeIcon from '@mui/icons-material/Home'
 import ExploreOutlinedIcon from '@mui/icons-material/ExploreOutlined'
@@ -89,10 +90,12 @@ const Menu = ({ darkMode, setDarkMode }) => {
   return (
     <Container>
       <Wrapper>
-        <Logo>
-          <Img src={logo} />
-          LeonTube
-        </Logo>
+        <Link to='/' style={{ textDecoration: 'none', color: 'inherit' }}>
+          <Logo>
+            <Img src={logo} />
+            LeonTube
+          </Logo>
+        </Link>
         <Item>
           <HomeIcon sx={{ fontSize: 'medium' }} />
           Home
