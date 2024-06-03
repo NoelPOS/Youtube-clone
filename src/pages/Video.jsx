@@ -11,6 +11,7 @@ import thumbnail from '../images/thumbnail.png'
 import video from '../images/video.mp4'
 
 import Recommendation from '../components/Recommendation'
+import Comments from '../components/Comments'
 
 const Container = styled.div`
   display: flex;
@@ -109,7 +110,7 @@ const Subscribe = styled.button`
 `
 
 const VideoFrame = styled.video`
-  max-height: 720px;
+  max-height: 420px;
   width: 100%;
 `
 
@@ -156,6 +157,7 @@ const Video = () => {
           <Subscribe>SUBSCRIBE</Subscribe>
         </Channel>
         <Hr />
+        <Comments />
       </Content>
       <Recommendation />
     </Container>
