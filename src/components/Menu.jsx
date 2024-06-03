@@ -38,6 +38,7 @@ const Logo = styled.div`
   gap: 5px;
   margin-bottom: 20px;
   cursor: pointer;
+  padding: 5px 0px;
 `
 
 const Img = styled.img`
@@ -48,7 +49,7 @@ const Item = styled.div`
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 5px 0px;
+  padding: 3px 0px;
   cursor: pointer;
   &:hover {
     background-color: ${({ theme }) => theme.soft};
