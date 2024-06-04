@@ -23,7 +23,7 @@ const UserSchema = mongoose.Schema(
       type: [String],
     },
     fromGoogle: {
-      tyupe: Boolean,
+      type: Boolean,
       default: false,
     },
   },
