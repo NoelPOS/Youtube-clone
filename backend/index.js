@@ -3,10 +3,12 @@ import mongoose from 'mongoose'
 import dotenv from 'dotenv'
 
 import authRoutes from './routes/auth.js'
+import cookieParser from 'cookie-parser'
 
 const app = express()
 dotenv.config()
 
+// app.use(cookieParser)
 app.use(express.json())
 
 app.use('/api/auth', authRoutes)
@@ -26,7 +28,7 @@ const connect = () => {
     })
 }
 
-app.listen(8080, () => {
+app.listen(5050, () => {
   connect()
   console.log('app is listening!')
 })
