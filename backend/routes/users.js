@@ -14,7 +14,7 @@ const router = express.Router()
 
 router.put('/:id', verifyToken, update)
 
-router.put('/:id', verifyToken, deleteUser)
+router.delete('/:id', verifyToken, deleteUser)
 
 router.get('/find/:id', getUser)
 

@@ -4,7 +4,7 @@ import dotenv from 'dotenv'
 
 import authRoutes from './routes/auth.js'
 import userRoutes from './routes/users.js'
-import videoRoutes from './routes/videos.jsz'
+import videoRoutes from './routes/videos.js'
 import cookieParser from 'cookie-parser'
 
 const app = express()
