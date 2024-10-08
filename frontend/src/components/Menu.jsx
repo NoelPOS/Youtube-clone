@@ -116,17 +116,7 @@ const Menu = ({ darkMode, setDarkMode }) => {
           <HistoryOutlinedIcon sx={{ fontSize: 20 }} />
           History
         </Item>
-        <Hr />
 
-        <Login>
-          Sign in for more.
-          <Link to='signin' style={{ textDecoration: 'none' }}>
-            <Button>
-              <AccountCircleOutlinedIcon sx={{ fontSize: 20 }} />
-              SIGN IN
-            </Button>
-          </Link>
-        </Login>
         <Hr />
 
         <Title>BEST OF LeonTUBE</Title>
