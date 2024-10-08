@@ -50,7 +50,6 @@ const Item = styled.div`
   gap: 20px;
   cursor: pointer;
   padding: 7.5px 0px;
-
   &:hover {
     background-color: ${({ theme }) => theme.soft};
   }
@@ -123,7 +122,7 @@ const Menu = ({ darkMode, setDarkMode }) => {
           Sign in for more.
           <Link to='signin' style={{ textDecoration: 'none' }}>
             <Button>
-              {/* <AccountCircleOutlinedIcon sx={{ fontSize: 20 }} /> */}
+              <AccountCircleOutlinedIcon sx={{ fontSize: 20 }} />
               SIGN IN
             </Button>
           </Link>

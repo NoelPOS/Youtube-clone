@@ -10,6 +10,11 @@ const Container = styled.div`
   cursor: pointer;
   display: ${(props) => props.type === 'sm' && 'flex'};
   gap: 10px;
+  &:hover {
+    opacity: 0.8;
+    scale: 1.02;
+    transition: all 0.3s;
+  }
 `
 
 const Image = styled.img`
@@ -57,7 +62,10 @@ const Info = styled.div`
 const Card = ({ type }) => {
   return (
     <Container type={type}>
-      <Image type={type} src={thumbnail} />
+      <Link to='video/id'>
+        <Image type={type} src={thumbnail} />
+      </Link>
+
       <Details type={type}>
         <ChannelImage type={type} src={thumbnail} />
         <Texts>
